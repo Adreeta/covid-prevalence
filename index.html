@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>COVID-19 Prevalence Map</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #A7A9A8;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+header p {
+    font-size: 14px;
+    text-align: left;
+}
+
+footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+      font-size: small;
+    }
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+ 
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
+}
+
+</style>
+</head>
+<body class="">
+<header>
+  <img src="img/DRDC.png" style="float: left;">
+  <h3>COVID-19 Point-Prevalence Estimation Map</h3>
+  <h1 style="color: blue;">DRAFT</h1>
+  <p>Last updated <b>2020-June-28</b></p>
+  <p> <b>**NOTE**</b> This data is not currently being updated.  This website is for proof-of-concept and demonstration only.  The system is currently being configured to run this product with at least daily updates.</p>
+  <p>This map shows the estimated point-prevalence over time of COVID-19.  The point prevalence is estimated using Bayesian inferrence based on the latest epidemiological parameters and open-souce case data. See <a href="https://gitlab.com/stevenhorn/covid-prevalence">https://gitlab.com/stevenhorn/covid-prevalence</a> for more information.</p>
+<p>Download CSV: <a href="https://stevenhorn.gitlab.io/covid-prevalence/results/latest_results.csv">latest</a> | <a href="https://stevenhorn.gitlab.io/covid-prevalence/results/latest_timeseries.csv">timeseries</a> | geojson (soon)</p>
+  <p>The Information is licensed as is, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.</p>
+</header>
+<div class="iframe-container">
+    <iframe src="https://stevenhorn.gitlab.io/covid-prevalence/map.html" allowfullscreen style="border:none;width:100%;height:100%;"></iframe>
+</div>
+<footer>
+&copy; Her Majesty the Queen in Right of Canada, as represented by the Minister of National Defence, 2020. <a href="https://open.canada.ca/en/open-government-licence-canada">License</a>
+</footer>
+</body>
+</html>
