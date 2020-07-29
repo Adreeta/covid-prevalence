@@ -6,6 +6,18 @@ This work is not validated, and is still in draft, and comes with no liability. 
 
 [Interactive map](https://stevenhorn.gitlab.io/covid-prevalence/)
 
+## Acknowledgements
+
+The following individuals have provided support or contribution to this project:
+
+* Dr. Ramzi Mirshak
+* Dr. David Waller
+* Dr. Steven Schofield
+* Mr. Michael A. Salciccoli
+* Dr. Steve Guillouzic
+* Mr. Andrew Sirjoosingh
+* Mr. Alasdair Grant
+
 ## Licenses
 
 Copyright (c) Her Majesty the Queen in Right of Canada, as represented by the Minister of National Defence, 2020.
