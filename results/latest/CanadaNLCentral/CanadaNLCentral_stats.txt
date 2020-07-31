@@ -1,32 +1,33 @@
-1 Divergences 
-Computed from 80 by 127 log-likelihood matrix
+8 Divergences 
+Computed from 80 by 138 log-likelihood matrix
 
          Estimate       SE
-elpd_loo  1487.09   197.25
-p_loo       24.44        -
+elpd_loo   -46.62    24.95
+p_loo       10.46        -
 
 There has been a warning during the calculation. Please check the results.
 ------
 
 Pareto k diagnostic values:
                          Count   Pct.
-(-Inf, 0.5]   (good)        0    0.0%
- (0.5, 0.7]   (ok)          0    0.0%
-   (0.7, 1]   (bad)         2    1.6%
-   (1, Inf)   (very bad)  125   98.4%
+(-Inf, 0.5]   (good)      133   96.4%
+ (0.5, 0.7]   (ok)          3    2.2%
+   (0.7, 1]   (bad)         2    1.4%
+   (1, Inf)   (very bad)    0    0.0%
 
 
 The scale is now log by default. Use 'scale' argument or 'stats.ic_scale' rcParam if
 you rely on a specific value.
 A higher log-score (or a lower deviance) indicates a model with better predictive
 accuracy.
-               mean      sd     hdi_3%  ...  ess_bulk  ess_tail  r_hat
-pa            0.555   0.025      0.521  ...       7.0      15.0   3.01
-pu            0.897   0.004      0.890  ...       7.0      25.0   3.62
-mu            0.026   0.012      0.013  ...       7.0      16.0   3.47
-mus           1.009   0.019      0.977  ...       7.0      20.0   3.23
-Is_begin      2.218   0.858      1.107  ...       7.0      16.0   3.12
-Ia_begin  92316.473  13.243  92305.862  ...      63.0      43.0   1.26
-E_begin      18.647   7.642      9.855  ...       7.0      18.0   2.90
+            mean      sd  hdi_3%  hdi_97%  ...  ess_sd  ess_bulk  ess_tail  r_hat
+pa         0.292   0.044   0.209    0.349  ...    73.0      62.0      30.0   1.00
+pu         0.881   0.014   0.855    0.899  ...    87.0      82.0      66.0   1.00
+mu         3.991  16.320   0.280    5.237  ...    80.0      22.0      43.0   1.16
+mus        0.953   0.448   0.382    1.989  ...    74.0      63.0      31.0   1.03
+gamma      0.273   0.233   0.050    0.768  ...    40.0      44.0     102.0   1.04
+Is_begin   6.604   4.243   0.341   13.860  ...    81.0      68.0      30.0   1.08
+Ia_begin  24.403  23.651   0.162   55.396  ...    32.0      15.0      23.0   1.30
+E_begin   13.959  15.566   0.356   41.688  ...    46.0      32.0      96.0   1.07
 
-[7 rows x 11 columns]
+[8 rows x 11 columns]

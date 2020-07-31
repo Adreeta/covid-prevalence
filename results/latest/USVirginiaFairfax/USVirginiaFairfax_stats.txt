@@ -1,18 +1,16 @@
-1 Divergences 
-Computed from 120 by 121 log-likelihood matrix
+0 Divergences 
+Computed from 80 by 137 log-likelihood matrix
 
          Estimate       SE
-elpd_loo  -651.78    14.35
-p_loo       30.00        -
-
-There has been a warning during the calculation. Please check the results.
+elpd_loo  -772.70    14.60
+p_loo       48.57        -
 ------
 
 Pareto k diagnostic values:
                          Count   Pct.
-(-Inf, 0.5]   (good)      114   94.2%
- (0.5, 0.7]   (ok)          6    5.0%
-   (0.7, 1]   (bad)         1    0.8%
+(-Inf, 0.5]   (good)      129   94.2%
+ (0.5, 0.7]   (ok)          8    5.8%
+   (0.7, 1]   (bad)         0    0.0%
    (1, Inf)   (very bad)    0    0.0%
 
 
@@ -20,3 +18,14 @@ The scale is now log by default. Use 'scale' argument or 'stats.ic_scale' rcPara
 you rely on a specific value.
 A higher log-score (or a lower deviance) indicates a model with better predictive
 accuracy.
+           mean     sd  hdi_3%  hdi_97%  ...  ess_sd  ess_bulk  ess_tail  r_hat
+pa        0.257  0.050   0.185    0.349  ...    82.0      91.0      42.0   1.18
+pu        0.750  0.044   0.701    0.846  ...   126.0     138.0      96.0   1.01
+mu        0.200  0.086   0.054    0.317  ...    10.0       9.0      16.0   1.89
+mus       1.566  2.432   0.140    6.346  ...    18.0      16.0      63.0   1.29
+gamma     0.700  0.307   0.232    1.315  ...    40.0      41.0      66.0   1.07
+Is_begin  2.145  1.484   0.150    4.873  ...    57.0      48.0      43.0   1.05
+Ia_begin  4.521  3.934   0.281   12.880  ...    45.0      25.0      61.0   1.13
+E_begin   4.522  4.942   0.064   11.476  ...    52.0      29.0      63.0   1.11
+
+[8 rows x 11 columns]
