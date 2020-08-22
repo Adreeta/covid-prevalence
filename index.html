@@ -75,14 +75,14 @@ li {
   <img src="img/DRDC.png" style="float: left;">
   <h3>COVID-19 Point-Prevalence Estimation Map</h3>
   <p style="padding:5px;border-style:solid;border-color:lightblue">The Information is licensed as is, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.</p>
-  <p>Last updated <b>2020-August-19</b></p>
-  <p>This map shows the estimated point-prevalence over time of COVID-19.  The point prevalence is estimated using Bayesian inference based on the latest epidemiological parameters and open-souce case data. 
+  <p>Last updated <b><div id='lastUpdated'>2020-August-21</div></b></p>
+  <p>This map shows the estimated time varying point-prevalence of COVID-19.  The point prevalence is estimated using Bayesian inference based on the latest epidemiological parameters and open-souce case data. 
     <!-- See <a href="https://gitlab.com/stevenhorn/covid-prevalence">https://gitlab.com/stevenhorn/covid-prevalence</a> for more information. -->
   </p>
   <p>
     <b>Legend</b><br/>
     <p>
-      <img width=12px height=12px src='./img/Biohazard_symbol.svg'> This region has high prevalence and predicted to increase.
+      <img width=12px height=12px src='./img/virus_symbol.svg'> This region has high prevalence and predicted to increase.
     </p>
     <p>
       <img width=12px height=12px src='./img/warning-yellow.svg'> This region has low prevalence but is predicted to increase.
@@ -95,10 +95,13 @@ li {
     <b>Notes</b><br/>
     <ul>
       <li>
-        This data is not being updated regularily.  This website is for proof-of-concept and demonstration only.  The system is currently being configured for periodic updates.
+        Analysis of each region is updated at varying intervals.  Regions with higher prevalence, or changing prevalence are updated more frequently.  Each region should be updated at least once every 7 days.
       </li>
       <li>
-        This model is still under development.  Some regions with small populations and/or few cases are not shown at this time.
+        This model is still under development.  Some regions with small populations and/or few cases are not shown at this time.  The model also fails to effectively analyze some regions.  Best attempts are made to exclude these regions from the map.  As the model improves, more regions will be be shown.
+      </li>
+      <li>
+        All prevalence values are in percent of population infected (exposed or infectious).
       </li>
     </ul>
   </p>
