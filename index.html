@@ -75,20 +75,32 @@ li {
   <img src="img/DRDC.png" style="float: left;">
   <h3>COVID-19 Point-Prevalence Estimation Map</h3>
   <p style="padding:5px;border-style:solid;border-color:lightblue">The Information is licensed as is, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.</p>
-  <p>Last updated <b><div id='lastUpdated'>2020-August-21</div></b></p>
+  <p>
+    Last updated <b><span id='lastUpdated'>2020-August-24</span></b>
+  </p>
   <p>This map shows the estimated time varying point-prevalence of COVID-19.  The point prevalence is estimated using Bayesian inference based on the latest epidemiological parameters and open-souce case data. 
     <!-- See <a href="https://gitlab.com/stevenhorn/covid-prevalence">https://gitlab.com/stevenhorn/covid-prevalence</a> for more information. -->
   </p>
   <p>
+    <b>Model Overview</b><br/>
+    <p>
+      The model is an SEIR-like model, which treats reported cases as a biased partial measure of symptomatic onset with a variable delay to test and report.
+      Consideration is given for the likelihood of asymptomatic cases and undetected cases, as indicated from the current epidemiological parameter estimates.
+      The model debiases the case data for reporting and epidemiological effects using the entire data hysteresis to provide an estimate of the true prevalence within a population.
+  
+      Once the model is tuned to the case detections of the population, a prediction is provided to provide an indication of the expected future prevalence and cases.
+    </p>
+  </p>
+  <p>
     <b>Legend</b><br/>
     <p>
-      <img width=12px height=12px src='./img/virus_symbol.svg'> This region has high prevalence and predicted to increase.
+      <img width=12px height=12px src='./img/virus_symbol.svg'> This region has high prevalence and is predicted to increase. (prevalence &gt; 0.5%; 50% predicted 2-week increase)
     </p>
     <p>
-      <img width=12px height=12px src='./img/warning-yellow.svg'> This region has low prevalence but is predicted to increase.
+      <img width=12px height=12px src='./img/warning-yellow.svg'> This region has low prevalence but is predicted to increase. (prevalence &lt; 0.5%; 50% predicted 2-week increase)
     </p>
     <p>
-      <img width=12px height=12px src='./img/green-circle.svg'> This region has high prevalence but is predicted to decrease.
+      <img width=12px height=12px src='./img/green-circle.svg'> This region has high prevalence but is predicted to decrease. (prevalence &gt; 0.5%; 20% predicted 2-week decrease)
     </p>
   </p>
   <p>
@@ -112,6 +124,15 @@ li {
 </header>
 <div class="iframe-container">
     <iframe src="https://stevenhorn.gitlab.io/covid-prevalence/map.html" allowfullscreen style="border:none;width:100%;height:100%;"></iframe>
+</div>
+<br/>
+<div>
+  <p>
+    Please report any issues <a href="mailto:incoming+stevenhorn-covid-prevalence-19341877-issue-@incoming.gitlab.com">by email.</a>
+  </p>
+  <p>
+    Source code available on <a href="https://github.com/DRDC-RDDC/covid-prevalence">Github.</a>
+  </p>
 </div>
 <footer>
 &copy; Her Majesty the Queen in Right of Canada, as represented by the Minister of National Defence, 2020. <a href="https://open.canada.ca/en/open-government-licence-canada">License</a>
