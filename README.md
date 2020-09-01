@@ -2,7 +2,7 @@
 
 A Bayesian method to estimate population prevalence of COVID-19.
 
-This work is not validated, and is still in draft, and comes with no liability.  Do not use this information for making decisions.
+This work is not validated, and is still in draft, and comes with no liability. 
 
 [Interactive map](https://stevenhorn.gitlab.io/covid-prevalence/)
 
