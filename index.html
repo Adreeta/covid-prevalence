@@ -76,31 +76,36 @@ li {
   <h3>COVID-19 Point-Prevalence Estimation Map</h3>
   <p style="padding:5px;border-style:solid;border-color:lightblue">The Information is licensed as is, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.</p>
   <p>
-    Last updated <b><span id='lastUpdated'>2020-September-1</span></b>
+    Last updated <b><span id='lastUpdated'>2020-September-8</span></b>
   </p>
-  <p>This map shows the estimated time varying point-prevalence of COVID-19.  The point prevalence is estimated using Bayesian inference based on the latest epidemiological parameters and open-souce case data. 
+  <p>This map shows the past, current, and near-term estimates of  point prevalence of SARS-CoV-2.  Point prevalence is defined here as the proportion (expressed as a percentatge) of the population currently infected with SARS-CoV-2, and who are potentially infectious or incubating. 
     <!-- See <a href="https://gitlab.com/stevenhorn/covid-prevalence">https://gitlab.com/stevenhorn/covid-prevalence</a> for more information. -->
   </p>
   <p>
-    <b>Model Overview</b><br/>
+    <b>Approach</b><br/>
     <p>
-      The model is an SEIR-like model, which treats reported cases as a biased partial measure of symptomatic onset with a variable delay to test and report.
-      Consideration is given for the likelihood of asymptomatic cases and undetected cases, as indicated from the current epidemiological parameter estimates.
-      The model debiases the case data for reporting and epidemiological effects using the entire data hysteresis to provide an estimate of the true prevalence within a population.
+      Point prevalence is estimated by health region in Canada, and at various scales outside of Canada, using a Bayesian inference method (a statistical approach) that considers important epidemiological estimates (e.g. incubation period, infectious period, asymptomatic fraction) combined with open-source case information (e.g. cases). The method takes account of lags in reporting (e.g. between testing and reporting) and dynamically adjusts for biases in case reporting.
   
       Once the model is tuned to the case detections of the population, a prediction is provided to provide an indication of the expected future prevalence and cases.
     </p>
   </p>
   <p>
     <b>Legend</b><br/>
+    <p>The colour scale, from lighter to darker (see bar at top of map) indicates the point prevalence estimate as of the time of the last map update. The arrows indicate the following:</p>
     <p>
-      <img width=12px height=12px src='./img/virus_symbol.svg'> This region has high prevalence and is predicted to increase. (prevalence &gt; 0.5%; 50% predicted 2-week increase)
+      <img width=12px height=12px src='./img/Red_Arrow_Up.svg'> This region has high prevalence and is predicted to increase. (prevalence &gt; 0.5%; 50% predicted 2-week increase)
     </p>
     <p>
       <img width=12px height=12px src='./img/warning-yellow.svg'> This region has low prevalence but is predicted to increase. (prevalence &lt; 0.5%; 50% predicted 2-week increase)
     </p>
     <p>
-      <img width=12px height=12px src='./img/green-circle.svg'> This region has high prevalence but is predicted to decrease. (prevalence &gt; 0.5%; 20% predicted 2-week decrease)
+      <img width=12px height=12px src='./img/Green_Arrow_Down.svg'> This region has high prevalence but is predicted to decrease. (prevalence &gt; 0.5%; 20% predicted 2-week decrease)
+    </p>
+  </p>
+  <p>
+    <b>Interpretation</b><br/>
+    <p>
+      This tool was developed at the requests of the Canadian Forces Health Services. Estimates made within it are intended to be used by medical advisors, e.g. to support local risk assessment and related advice provided to commanders. The estimates also are intended to support use of other tools, e.g., the COVID-19 tool for estimating risk of infections among a group. This tool IS NOT intended as a standalone decision-making product in the absence of medical advice, and IS NOT to be used in this way.
     </p>
   </p>
   <p>
@@ -110,7 +115,7 @@ li {
         Analysis of each region is updated at varying intervals.  Regions with higher prevalence, or changing prevalence are updated more frequently.  Each region should be updated at least once every 7 days.
       </li>
       <li>
-        This model is still under development.  Some regions with small populations and/or few cases are not shown at this time.  The model also fails to effectively analyze some regions.  Best attempts are made to exclude these regions from the map.  As the model improves, more regions will be be shown.
+        This tool continues to be optimized. In some cases, estimates are not provided for an area, e.g., because the available data do not allow robust estimation of point prevalence. We are working to address such gaps on a continual basis.
       </li>
       <li>
         All prevalence values are in percent of population infected (exposed or infectious).
@@ -118,7 +123,9 @@ li {
     </ul>
   </p>
   <p>
-    Download CSV: <a href="https://stevenhorn.gitlab.io/covid-prevalence/results/latest_results.csv">latest</a> 
+    Download numeric estimates for all areas considered in CSV format: <a href="https://stevenhorn.gitlab.io/covid-prevalence/results/latest_results.csv">latest results</a>,
+    <a href="https://stevenhorn.gitlab.io/covid-prevalence/results/latest_Canada.csv">Canada results</a>,
+    <a href="https://stevenhorn.gitlab.io/covid-prevalence/results/timeseries_Canada.csv">Canada timeseries</a>
     <!-- | <a href="https://stevenhorn.gitlab.io/covid-prevalence/results/latest_timeseries.csv">timeseries</a> | geojson (soon) -->
   </p>
 </header>
