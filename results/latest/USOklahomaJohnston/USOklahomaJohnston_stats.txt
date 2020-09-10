@@ -1,20 +1,20 @@
-1 Divergences 
+2 Divergences 
 Failed validation 
-Computed from 80 by 169 log-likelihood matrix
+Computed from 80 by 177 log-likelihood matrix
 
          Estimate       SE
-elpd_loo  -199.56    20.72
-p_loo       14.20        -
+elpd_loo  -233.32    20.13
+p_loo       20.37        -
 
 There has been a warning during the calculation. Please check the results.
 ------
 
 Pareto k diagnostic values:
                          Count   Pct.
-(-Inf, 0.5]   (good)      150   88.8%
- (0.5, 0.7]   (ok)         16    9.5%
-   (0.7, 1]   (bad)         2    1.2%
-   (1, Inf)   (very bad)    1    0.6%
+(-Inf, 0.5]   (good)      157   88.7%
+ (0.5, 0.7]   (ok)          9    5.1%
+   (0.7, 1]   (bad)         8    4.5%
+   (1, Inf)   (very bad)    3    1.7%
 
 
 The scale is now log by default. Use 'scale' argument or 'stats.ic_scale' rcParam if
@@ -22,13 +22,13 @@ you rely on a specific value.
 A higher log-score (or a lower deviance) indicates a model with better predictive
 accuracy.
            mean     sd  hdi_3%  hdi_97%  ...  ess_sd  ess_bulk  ess_tail  r_hat
-pa        0.257  0.051   0.169    0.347  ...    65.0      68.0      57.0   1.05
-pu        0.818  0.057   0.719    0.894  ...    14.0      16.0      60.0   1.09
-mu        1.136  1.524   0.006    2.944  ...    31.0      22.0      54.0   1.14
-mus       0.123  0.489   0.002    0.269  ...    19.0       7.0      15.0   1.27
-gamma     0.104  0.169   0.005    0.353  ...    11.0       8.0      60.0   1.21
-Is_begin  0.568  0.562   0.022    1.995  ...    15.0       8.0      47.0   1.20
-Ia_begin  2.504  2.357   0.082    7.672  ...     8.0       7.0      34.0   1.28
-E_begin   1.249  1.948   0.017    4.101  ...    54.0      13.0      43.0   1.14
+pa        0.250  0.058   0.166    0.348  ...    68.0      66.0      40.0   1.03
+pu        0.833  0.055   0.713    0.898  ...    23.0      26.0      24.0   1.03
+mu        0.753  2.230   0.007    2.530  ...    91.0       9.0      42.0   1.20
+mus       0.576  0.978   0.003    2.068  ...    26.0      18.0      43.0   1.13
+gamma     0.194  0.242   0.007    0.633  ...    18.0      10.0      31.0   1.16
+Is_begin  0.958  0.856   0.021    2.554  ...    48.0      41.0      43.0   1.04
+Ia_begin  2.413  2.234   0.027    7.068  ...    41.0      26.0      39.0   1.08
+E_begin   1.011  1.450   0.012    3.724  ...    17.0      11.0      38.0   1.16
 
 [8 rows x 11 columns]
