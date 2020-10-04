@@ -1,20 +1,20 @@
 0 Divergences 
 Passed validation 
-Computed from 80 by 197 log-likelihood matrix
+Computed from 80 by 200 log-likelihood matrix
 
          Estimate       SE
-elpd_loo  -373.65    17.11
-p_loo       13.42        -
+elpd_loo  -380.52    17.99
+p_loo       17.32        -
 
 There has been a warning during the calculation. Please check the results.
 ------
 
 Pareto k diagnostic values:
                          Count   Pct.
-(-Inf, 0.5]   (good)      182   92.4%
- (0.5, 0.7]   (ok)         12    6.1%
-   (0.7, 1]   (bad)         3    1.5%
-   (1, Inf)   (very bad)    0    0.0%
+(-Inf, 0.5]   (good)      178   89.0%
+ (0.5, 0.7]   (ok)         16    8.0%
+   (0.7, 1]   (bad)         5    2.5%
+   (1, Inf)   (very bad)    1    0.5%
 
 
 The scale is now log by default. Use 'scale' argument or 'stats.ic_scale' rcParam if
@@ -22,13 +22,13 @@ you rely on a specific value.
 A higher log-score (or a lower deviance) indicates a model with better predictive
 accuracy.
            mean     sd  hdi_3%  hdi_97%  ...  ess_sd  ess_bulk  ess_tail  r_hat
-pa        0.272  0.056   0.185    0.344  ...   152.0     152.0      40.0   1.00
-pu        0.868  0.035   0.804    0.900  ...    22.0      15.0      33.0   1.13
-mu        0.587  0.726   0.155    1.517  ...    40.0      40.0      46.0   1.05
-mus       0.769  3.128   0.020    2.992  ...    81.0      14.0      40.0   1.12
-gamma     0.389  0.379   0.039    1.156  ...    39.0      13.0      57.0   1.14
-Is_begin  1.188  0.876   0.023    2.818  ...    55.0      50.0      59.0   1.03
-Ia_begin  3.007  2.640   0.025    7.291  ...    95.0      36.0      14.0   1.03
-E_begin   1.843  2.261   0.022    6.198  ...   100.0      73.0      54.0   1.01
+pa        0.258  0.056   0.172    0.350  ...   152.0     152.0      37.0   1.07
+pu        0.851  0.046   0.754    0.899  ...    30.0      34.0      54.0   1.06
+mu        0.672  0.884   0.118    1.793  ...    26.0      16.0      26.0   1.12
+mus       0.656  1.001   0.010    2.735  ...    38.0      16.0      22.0   1.08
+gamma     0.457  0.431   0.036    1.048  ...    49.0      24.0      48.0   1.04
+Is_begin  1.380  0.992   0.045    3.160  ...   113.0     118.0      60.0   0.99
+Ia_begin  3.504  2.788   0.193    8.894  ...   128.0     133.0      60.0   1.01
+E_begin   2.492  1.944   0.014    6.178  ...   141.0     102.0      59.0   0.98
 
 [8 rows x 11 columns]
